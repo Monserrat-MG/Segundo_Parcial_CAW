@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Signos Zodiacales</h1>
+
+    <script>
+        let fecha = prompt("Ingresa tu fecha de cumpleaños en formato DD/MM. Ejemplo: 19/01");
+
+        let partes = fecha.split("/");
+        let dia = parseInt(partes[0]);
+        let mes = parseInt(partes[1]);
+    
+        switch (true) {
+             // ENERO
+            case (mes == 1 && dia >= 1 && dia <= 19):
+            // DICIEMBRE
+            case (mes == 12 && dia >= 22 && dia <= 31):
+                document.write("<h2>Capricornio</h2>");
+                document.write("<p>Fechas: 22 de diciembre al 19 de enero.</p>");
+                document.write("<p>Características: disciplina, perseverancia y responsabilidad.</p>");
+                break;
+
+            case (mes == 1 && dia >= 20 && dia <= 31):
+            // FEBRERO
+            case (mes == 2 && dia >= 1 && dia <= 18):
+                document.write("<h2>Acuario</h2>");
+                document.write("<p>Fechas: 20 de enero al 18 de febrero.</p>");
+                document.write("<p>Características: originalidad, independencia y creatividad.</p>");
+                break;
+
+            case (mes == 2 && dia >= 19 && dia <= 29):
+            // MARZO
+            case (mes == 3 && dia >= 1 && dia <= 20):
+                document.write("<h2>Piscis</h2>");
+                document.write("<p>Fechas: 19 de febrero al 20 de marzo.</p>");
+                document.write("<p>Características: imaginación, sensibilidad y empatía.</p>");
+                break;
+
+            case (mes == 3 && dia >= 21 && dia <= 31):
+            // ABRIL
+            case (mes == 4 && dia >= 1 && dia <= 19):
+                document.write("<h2>Aries</h2>");
+                document.write("<p>Fechas: 21 de marzo al 19 de abril.</p>");
+                document.write("<p>Características: energía, iniciativa y valentía.</p>");
+                break;
+
+            case (mes == 4 && dia >= 20 && dia <= 30):
+            // MAYO
+            case (mes == 5 && dia >= 1 && dia <= 20):
+                document.write("<h2>Tauro</h2>");
+                document.write("<p>Fechas: 20 de abril al 20 de mayo.</p>");
+                document.write("<p>Características: paciencia, constancia y lealtad.</p>");
+                break;
+
+            case (mes == 5 && dia >= 21 && dia <= 31):
+            // JUNIO
+            case (mes == 6 && dia >= 1 && dia <= 20):
+                document.write("<h2>Géminis</h2>");
+                document.write("<p>Fechas: 21 de mayo al 20 de junio.</p>");
+                document.write("<p>Características: curiosidad, comunicación y adaptabilidad.</p>");
+                break;
+
+            case (mes == 6 && dia >= 21 && dia <= 30):
+            // JULIO
+            case (mes == 7 && dia >= 1 && dia <= 22):
+                document.write("<h2>Cáncer</h2>");
+                document.write("<p>Fechas: 21 de junio al 22 de julio.</p>");
+                document.write("<p>Características: sensibilidad, empatía y cariño.</p>");
+                break;
+
+            case (mes == 7 && dia >= 23 && dia <= 31):
+            // AGOSTO
+            case (mes == 8 && dia >= 1 && dia <= 22):
+                document.write("<h2>Leo</h2>");
+                document.write("<p>Fechas: 23 de julio al 22 de agosto.</p>");
+                document.write("<p>Características: creatividad, confianza y entusiasmo.</p>");
+                break;
+
+            case (mes == 8 && dia >= 23 && dia <= 31):
+            // SEPTIEMBRE
+            case (mes == 9 && dia >= 1 && dia <= 22):
+                document.write("<h2>Virgo</h2>");
+                document.write("<p>Fechas: 23 de agosto al 22 de septiembre.</p>");
+                document.write("<p>Características: organización, observación y responsabilidad.</p>");
+                break;
+
+            case (mes == 9 && dia >= 23 && dia <= 30):
+            // OCTUBRE
+            case (mes == 10 && dia >= 1 && dia <= 22):
+                document.write("<h2>Libra</h2>");
+                document.write("<p>Fechas: 23 de septiembre al 22 de octubre.</p>");
+                document.write("<p>Características: equilibrio, diplomacia y cooperación.</p>");
+                break;
+
+            case (mes == 10 && dia >= 23 && dia <= 31):
+            // NOVIEMBRE
+            case (mes == 11 && dia >= 1 && dia <= 21):
+                document.write("<h2>Escorpio</h2>");
+                document.write("<p>Fechas: 23 de octubre al 21 de noviembre.</p>");
+                document.write("<p>Características: determinación, intensidad e intuición.</p>");
+                break;
+
+            case (mes == 11 && dia >= 22 && dia <= 30):
+            // DICIEMBRE
+            case (mes == 12 && dia >= 1 && dia <= 21):
+                document.write("<h2>Sagitario</h2>");
+                document.write("<p>Fechas: 22 de noviembre al 21 de diciembre.</p>");
+                document.write("<p>Características: optimismo, aventura y libertad.</p>");
+                break;
+
+            default:
+                document.write("<h2>Fecha no válida</h2>");
+                document.write("<p>Ingresa una fecha correcta en formato DD/MM.</p>");
+        }
+    </script>
+    <br><br>
+    <a href="index.html" class="btn-regresar">
+        <span>←</span> Volver al inicio
+    </a>
+</body>
+</html>

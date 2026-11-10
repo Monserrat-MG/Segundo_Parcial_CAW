@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Promedio parcial</h1>
+    <br>
+    <script>
+        let r=prompt("Ingresa el nombre de tu materia");
+        let m=Number(prompt("Escribe la calificacion de tu primer parcial"));
+        let p=Number(prompt("Escribe la calificacion de tu segundo parcial"));
+        let c=Number(prompt("Escribe la calificacion de tu tercer parcial"));
+
+        let suma = m + p + c;
+        let promedio = suma / 3;
+        if(promedio >= 6){
+            document.write("Usted tiene un promedio aceptable de " + promedio + " en la materia " + r);
+        }else{
+            document.write("Usted a reprobado la materia de " + r + " con un promedio de " + promedio + "<br>");
+            document.write("Quiero que entiendas algo: una mala calificación no define quién eres ni hasta dónde puedes llegar, pero sí puede enseñarte lo que necesitas cambiar." + "<br>");
+            document.write("Sé que quizá estés decepcionado de ti mismo, pero no quiero que te quedes pensando en lo que hiciste mal, sino que empieces a pensar en lo que puedes hacer diferente." + "<br>");
+            document.write("La vida no siempre nos da los resultados que esperamos, pero de nosotros depende aprender de los errores y levantarnos con más ganas. No esperes a que alguien te recuerde tus responsabilidades ni a tener ganas de hacer las cosas. Aprende a cumplir contigo mismo, incluso cuando sea difícil." + "<br>");
+            document.write("No tienes que ser perfecto, solamente tienes que comprometerte de verdad con lo que quieres lograr. Estudia, esfuérzate, pide ayuda cuando la necesites y demuestra con acciones que puedes hacerlo mejor." + "<br>");
+            document.write("No te rindas por haber fallado, pero tampoco te conformes con saber que pudiste haberlo hecho mejor." + "<br>");
+            document.write("Todavía estás a tiempo de cambiar las cosas. Tu historia no se acaba con una materia reprobada; apenas estás comenzando a construir tu futuro." + "<br>");
+            document.write("Y ojalá que algún día mires atrás y te sientas orgulloso, no porque nunca hayas fallado, sino porque tuviste el valor de aprender, madurar y no rendirte contigo mismo. " + "<br>");
+        }
+    </script>
+    <br><br>
+    <a href="index.html" class="btn-regresar">
+        <span>←</span> Volver al inicio
+    </a>
+</body>
+</html>

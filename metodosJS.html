@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Metodos en HTML y Java Script</h1>
+    <br><br><br>
+
+    <p id="mensaje">Hola mundo</p>
+    <script>
+        document.getElementById("mensaje").innerHTML="¡Bienvenido!";
+    </script>
+
+    <br>
+
+    <div id="imagen"></div>
+    <script>
+        document.getElementById("imagen").innerHTML='<img src="logo.webp" alt="Logo">';
+    </script>
+
+    <br>
+
+    <p id="aviso">Mensaje inicial</p>
+    <script>
+        var elemneto=document.getElementById("aviso");
+        elemneto.textContent="Hola Estudiantes";
+    </script>
+
+    <br>
+
+    <button id="btn">Haz clic</button>
+    <script>
+        document.getElementById("btn").style.backgroundColor="lightblue";
+    </script>
+
+    <br>
+
+    <p class="destacado">Texto importante</p>
+    <script>
+        document.querySelector(".destacado").style.color="red";
+    </script>
+
+    <br>
+
+    <button class="btn">Enviar</button>
+    <script>
+        document.querySelector(".btn").disabled=true;
+    </script>
+    <br><br><br>
+    <a href="index.html" class="btn-regresar">
+        <span>←</span> Volver al inicio
+    </a>
+</body> 
+</html>
