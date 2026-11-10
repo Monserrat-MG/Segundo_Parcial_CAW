@@ -245,3 +245,38 @@ footer span {
 .btn-regresar:hover span {
     transform: translateX(-5px);
 }
+
+/* BOTÓN VOLVER AL INICIO */
+a[href="index.html"] {
+    display: inline-block;
+    padding: 13px 28px;
+    margin: 20px 0;
+
+    background: linear-gradient(135deg, #1565C0, #2196F3);
+    color: #FFFFFF;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+
+    border: 1px solid #64B5F6;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(21, 101, 192, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+/* AL PASAR EL CURSOR */
+a[href="index.html"]:hover {
+    background: linear-gradient(135deg, #0D47A1, #1976D2);
+    box-shadow: 0 0 18px rgba(33, 150, 243, 0.55);
+    transform: translateY(-3px);
+}
+
+/* AL PRESIONAR */
+a[href="index.html"]:active {
+    transform: scale(0.96);
+}
