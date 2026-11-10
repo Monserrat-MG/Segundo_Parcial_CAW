@@ -1,0 +1,92 @@
+/* =========================================
+   BOTÓN REGRESAR - DISEÑO PREMIUM AZUL
+========================================= */
+
+.btn-regresar {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 10px 24px 10px 11px;
+    margin: 18px 0;
+
+    background: linear-gradient(
+        135deg,
+        #1685f8 0%,
+        #0863cc 55%,
+        #10428f 100%
+    );
+
+    border: 1px solid rgba(96, 165, 250, 0.7);
+    border-radius: 13px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 650;
+    letter-spacing: 0.3px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 100, 220, 0.30),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* ICONO */
+.btn-regresar span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 9px;
+
+    color: white;
+    font-size: 23px;
+    line-height: 1;
+
+    transition: transform 0.3s ease;
+}
+
+/* HOVER */
+.btn-regresar:hover {
+    transform: translateY(-4px);
+
+    background: linear-gradient(
+        135deg,
+        #2496ff,
+        #0875e8,
+        #1556ad
+    );
+
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 10px 28px rgba(0, 119, 255, 0.40),
+        0 0 15px rgba(56, 189, 248, 0.18);
+}
+
+.btn-regresar:hover span {
+    transform: translateX(-5px);
+}
+
+/* PRESIONAR */
+.btn-regresar:active {
+    transform: translateY(-1px) scale(0.97);
+}
+
+/* ACCESIBILIDAD */
+.btn-regresar:focus-visible {
+    outline: 3px solid #38bdf8;
+    outline-offset: 4px;
+}
